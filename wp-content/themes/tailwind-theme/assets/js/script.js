@@ -1,28 +1,34 @@
+// Swiper Autoplay
 const autoplaySwiper = new Swiper('.swiper-autoplay', {
-    loop: true, // Mengulang slide
-    autoplay: {
-      delay: 2000, // Waktu delay (ms) untuk setiap slide
-      disableOnInteraction: false, // Agar autoplay tidak berhenti saat interaksi
+  loop: true, // Mengulang slide
+  autoplay: {
+    delay: 2000, // Waktu delay (ms) untuk setiap slide
+    disableOnInteraction: false, // Agar autoplay tidak berhenti saat interaksi
+  },
+  slidesPerView: 5, // Menampilkan 5 slide secara bersamaan di layar besar
+  spaceBetween: 2, // Menurunkan jarak antar slide
+  centeredSlides: false, // Tidak menempatkan slide di tengah
+  breakpoints: {
+    1024: {
+      slidesPerView: 5, // Menampilkan 4 slide pada layar lebih besar dari 1024px
+      spaceBetween: 2,
     },
-    slidesPerView: 5, // Menampilkan 5 slide secara bersamaan
-    spaceBetween: 2, // Menurunkan jarak antar slide
-    centeredSlides: false, // Tidak menempatkan slide di tengah
-    breakpoints: {
-      1024: {
-        slidesPerView: 4, // Menampilkan 4 slide pada layar lebih kecil
-        spaceBetween: 2, // Jarak antar slide pada layar lebih kecil
-      },
-      768: {
-        slidesPerView: 3, // Menampilkan 3 slide pada layar lebih kecil
-        spaceBetween: 2, // Jarak antar slide pada layar lebih kecil
-      },
-      640: {
-        slidesPerView: 2, // Menampilkan 2 slide pada layar lebih kecil
-        spaceBetween: 2, // Jarak antar slide pada layar lebih kecil
-      },
+    768: {
+      slidesPerView: 3, // Menampilkan 3 slide pada layar lebih kecil dari 1024px (dan lebih besar dari 640px)
+      spaceBetween: 2,
     },
-  });
+    640: {
+      slidesPerView: 3, // Menampilkan 3 slide pada layar lebih kecil dari 768px
+      spaceBetween: 2,
+    },
+    390: {
+      slidesPerView: 3, // Menampilkan 3 slide pada layar lebih kecil dari 768px
+      spaceBetween: 2,
+    },
+  },
+});
 
+// Swiper card
   const cardSwiper = new Swiper('.swiper-cards', {
     loop: true, // Mengaktifkan loop
     slidesPerView: 3, // Menampilkan 3 card sekaligus
@@ -41,11 +47,13 @@ const autoplaySwiper = new Swiper('.swiper-autoplay', {
         640: {
             slidesPerView: 1, // 1 card pada layar kecil
         },
+        390: {
+            slidesPerView: 1, // 1 card pada layar kecil
+        },
     },
 });
 
-
-// button back to top
+// Button back to top
 const backToTopButton = document.getElementById("backToTop");
 
 // Tampilkan tombol ketika scroll melebihi 100px
@@ -66,3 +74,27 @@ backToTopButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// Responsive Navbar
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.getElementById("mobile-menu-button");
+  const closeButton = document.getElementById("close-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuOverlay = document.getElementById("menu-overlay");
+
+  function openMenu() {
+      mobileMenu.classList.remove("-translate-x-full");
+      menuOverlay.classList.remove("hidden");
+  }
+
+  function closeMenu() {
+      mobileMenu.classList.add("-translate-x-full");
+      menuOverlay.classList.add("hidden");
+  }
+
+  menuButton.addEventListener("click", openMenu);
+  closeButton.addEventListener("click", closeMenu);
+  menuOverlay.addEventListener("click", closeMenu);
+});
+
+
