@@ -171,7 +171,7 @@ include get_template_directory() . '/navbar.php';
                             </p>
                             <div class="flex justify-center mt-4">
                                 <a href="#"
-                                    class="inline-block text-center px-3 py-2 sm:px-10 sm:py-2 lg:px-10 lg:py-3 sm:text-sm lg:text-md bg-white text-black font-medium rounded-full hover:bg-indigo-600 shadow-lg transition-colors duration-300 whitespace-nowrap">
+                                    class="inline-block text-center px-3 py-2 sm:px-10 sm:py-2 lg:px-10 lg:py-3 sm:text-sm lg:text-md bg-white text-black font-medium rounded-full hover:bg-pink-700 shadow-lg transition-colors duration-300 whitespace-nowrap">
                                     Get in Touch <i class="fi fi-rr-arrow-up-right text-black text-sm ml-3"></i>
                                 </a>
                             </div>
@@ -186,7 +186,7 @@ include get_template_directory() . '/navbar.php';
                             </p>
                             <div class="flex justify-center mt-4">
                                 <a href="#"
-                                    class="inline-block text-center px-3 py-2 sm:px-10 sm:py-2 lg:px-10 lg:py-3 sm:text-sm lg:text-md bg-white text-black font-medium rounded-full hover:bg-indigo-600 shadow-lg transition-colors duration-300 whitespace-nowrap">
+                                    class="inline-block text-center px-3 py-2 sm:px-10 sm:py-2 lg:px-10 lg:py-3 sm:text-sm lg:text-md bg-white text-black font-medium rounded-full hover:bg-pink-700 shadow-lg transition-colors duration-300 whitespace-nowrap">
                                     Get in Touch <i class="fi fi-rr-arrow-up-right text-black text-sm ml-3"></i>
                                 </a>
                             </div>
@@ -201,7 +201,7 @@ include get_template_directory() . '/navbar.php';
                             </p>
                             <div class="flex justify-center mt-4">
                                 <a href="#"
-                                    class="inline-block text-center px-3 py-2 sm:px-10 sm:py-2 lg:px-10 lg:py-3 sm:text-sm lg:text-md bg-white text-black font-medium rounded-full hover:bg-indigo-600 shadow-lg transition-colors duration-300 whitespace-nowrap">
+                                    class="inline-block text-center px-3 py-2 sm:px-10 sm:py-2 lg:px-10 lg:py-3 sm:text-sm lg:text-md bg-white text-black font-medium rounded-full hover:bg-pink-700 shadow-lg transition-colors duration-300 whitespace-nowrap">
                                     Get in Touch <i class="fi fi-rr-arrow-up-right text-black text-sm ml-3"></i>
                                 </a>
                             </div>
@@ -216,7 +216,7 @@ include get_template_directory() . '/navbar.php';
                             </p>
                             <div class="flex justify-center mt-4">
                                 <a href="#"
-                                    class="inline-block text-center px-3 py-2 sm:px-10 sm:py-2 lg:px-10 lg:py-3 sm:text-sm lg:text-md bg-white text-black font-medium rounded-full hover:bg-indigo-600 shadow-lg transition-colors duration-300 whitespace-nowrap">
+                                    class="inline-block text-center px-3 py-2 sm:px-10 sm:py-2 lg:px-10 lg:py-3 sm:text-sm lg:text-md bg-white text-black font-medium rounded-full hover:bg-pink-700 shadow-lg transition-colors duration-300 whitespace-nowrap">
                                     Get in Touch <i class="fi fi-rr-arrow-up-right text-black text-sm ml-3"></i>
                                 </a>
                             </div>
@@ -231,7 +231,7 @@ include get_template_directory() . '/navbar.php';
                             </p>
                             <div class="flex justify-center mt-4">
                                 <a href="#"
-                                    class="inline-block text-center px-3 py-2 sm:px-10 sm:py-2 lg:px-10 lg:py-3 sm:text-sm lg:text-md bg-white text-black font-medium rounded-full hover:bg-indigo-600 shadow-lg transition-colors duration-300 whitespace-nowrap">
+                                    class="inline-block text-center px-3 py-2 sm:px-10 sm:py-2 lg:px-10 lg:py-3 sm:text-sm lg:text-md bg-white text-black font-medium rounded-full hover:bg-pink-700 shadow-lg transition-colors duration-300 whitespace-nowrap">
                                     Get in Touch <i class="fi fi-rr-arrow-up-right text-black text-sm ml-3"></i>
                                 </a>
                             </div>
