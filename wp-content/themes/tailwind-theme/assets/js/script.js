@@ -25,6 +25,10 @@ const autoplaySwiper = new Swiper('.swiper-autoplay', {
       slidesPerView: 3, // Menampilkan 3 slide pada layar lebih kecil dari 768px
       spaceBetween: 2,
     },
+    360: {
+      slidesPerView: 3, // Menampilkan 3 slide pada layar lebih kecil dari 768px
+      spaceBetween: 2,
+    },
   },
 });
 
@@ -49,6 +53,9 @@ const autoplaySwiper = new Swiper('.swiper-autoplay', {
         },
         390: {
             slidesPerView: 1, // 1 card pada layar kecil
+        },
+        360: {
+          slidesPerView: 1, // 1 card pada layar kecil
         },
     },
 });
@@ -96,5 +103,3 @@ document.addEventListener("DOMContentLoaded", function () {
   closeButton.addEventListener("click", closeMenu);
   menuOverlay.addEventListener("click", closeMenu);
 });
-
-

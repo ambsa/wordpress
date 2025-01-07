@@ -257,7 +257,10 @@ include get_template_directory() . '/navbar.php';
         <!-- Header Section -->
         <div class="container flex justify-between items-center py-5">
             <h1 class="text-slate-50 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">
-                <span class="text-red-500">I</span>News
+                <span
+                    class="inline-block w-2 h-6 sm:h-8 md:h-10 lg:h-11 bg-red-500 rounded-full mr-2">
+                </span>
+                News
             </h1>
             <a href="#"
                 class="bg-transparent border border-white text-slate-50 text-sm px-5 py-3 rounded-full mr-10 hover:bg-pink-700 transition duration-200 text-center hidden md:inline-block">
@@ -320,8 +323,11 @@ include get_template_directory() . '/navbar.php';
     <div class="container mx-auto p-6">
         <!-- Header Section -->
         <div class="container flex justify-between items-center py-5">
-            <h1 class="text-slate-50 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">
-                <span class="text-red-500">I</span>Latest articles
+        <h1 class="text-slate-50 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">
+                <span
+                    class="inline-block w-2 h-6 sm:h-8 md:h-10 lg:h-11 bg-red-500 rounded-full mr-2">
+                </span>
+                Latest Articles
             </h1>
             <a href="#"
                 class="bg-transparent border border-white text-slate-50 text-sm px-5 py-3 rounded-full mr-10 hover:bg-pink-700 transition duration-200 text-center hidden md:inline-block">

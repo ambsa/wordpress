@@ -1,4 +1,4 @@
-<nav id="navbar" class="bg-[#100F16] border-b border-slate-500 sticky z-50 top-0 transition-all duration-300 ease-in-out">
+<nav id="navbar" class="bg-[#100F16] border-b border-slate-700 sticky z-50 top-0 transition-all duration-300 ease-in-out">
     <div class="container mx-auto px-6 flex justify-between items-center py-6">
         <!-- Logo -->
         <div>
@@ -50,7 +50,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu"
         class="fixed top-0 left-0 h-full w-64 bg-[#100F16] shadow-lg transform -translate-x-full transition-transform duration-500 ease-in-out z-50">
-        <div class="p-4">
+        <div class="p-4 flex justify-end">
             <button id="close-menu-button" class="z-50">
                 <i class="fi fi-rr-cross text-white"></i>
             </button>
