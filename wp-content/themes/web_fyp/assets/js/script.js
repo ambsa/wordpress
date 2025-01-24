@@ -1,30 +1,53 @@
-// services
-  const dropdownButton = document.getElementById('dropdown-button');
-  const dropdownMenu = document.getElementById('dropdown-menu');
-  const dropdownIcon = document.getElementById('dropdown-icon');
-  let dropdownVisible = false;
+// // services
+//   const dropdownButton = document.getElementById('dropdown-button');
+//   const dropdownMenu = document.getElementById('dropdown-menu');
+//   const dropdownIcon = document.getElementById('dropdown-icon');
+//   let dropdownVisible = false;
 
-  // Toggle dropdown on button click
-  dropdownButton.addEventListener('click', () => {
-    dropdownVisible = !dropdownVisible;
-    if (dropdownVisible) {
-      dropdownMenu.classList.remove('opacity-0', 'invisible', 'scale-95');
-      dropdownMenu.classList.add('opacity-100', 'visible', 'scale-100');
-      dropdownIcon.classList.add('rotate-180'); // Animasi ikon
-    } else {
-      dropdownMenu.classList.add('opacity-0', 'invisible', 'scale-95');
-      dropdownMenu.classList.remove('opacity-100', 'visible', 'scale-100');
-      dropdownIcon.classList.remove('rotate-180'); // Reset animasi ikon
-    }
-  });
+//   // Toggle dropdown on button click
+//   dropdownButton.addEventListener('click', () => {
+//     dropdownVisible = !dropdownVisible;
+//     if (dropdownVisible) {
+//       dropdownMenu.classList.remove('opacity-0', 'invisible', 'scale-95');
+//       dropdownMenu.classList.add('opacity-100', 'visible', 'scale-100');
+//       dropdownIcon.classList.add('rotate-180'); // Animasi ikon
+//     } else {
+//       dropdownMenu.classList.add('opacity-0', 'invisible', 'scale-95');
+//       dropdownMenu.classList.remove('opacity-100', 'visible', 'scale-100');
+//       dropdownIcon.classList.remove('rotate-180'); // Reset animasi ikon
+//     }
+//   });
 
-  // Hide dropdown when mouse leaves the menu
-  dropdownMenu.addEventListener('mouseleave', () => {
-    dropdownVisible = false;
-    dropdownMenu.classList.add('opacity-0', 'invisible', 'scale-95');
-    dropdownMenu.classList.remove('opacity-100', 'visible', 'scale-100');
-    dropdownIcon.classList.remove('rotate-180'); // Reset animasi ikon
-  });
+//   // Hide dropdown when mouse leaves the menu
+//   dropdownMenu.addEventListener('mouseleave', () => {
+//     dropdownVisible = false;
+//     dropdownMenu.classList.add('opacity-0', 'invisible', 'scale-95');
+//     dropdownMenu.classList.remove('opacity-100', 'visible', 'scale-100');
+//     dropdownIcon.classList.remove('rotate-180'); // Reset animasi ikon
+//   });
+
+    // Ambil elemen yang diperlukan
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const closeMenuButton = document.getElementById('close-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+
+    // Fungsi untuk membuka menu
+    const openMenu = () => {
+        mobileMenu.classList.remove('-translate-x-full');
+        menuOverlay.classList.remove('hidden');
+    };
+
+    // Fungsi untuk menutup menu
+    const closeMenu = () => {
+        mobileMenu.classList.add('-translate-x-full');
+        menuOverlay.classList.add('hidden');
+    };
+
+    // Tambahkan event listener
+    mobileMenuButton.addEventListener('click', openMenu);
+    closeMenuButton.addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
 
 // Swiper Autoplay
 const autoplaySwiper = new Swiper('.swiper-autoplay', {
@@ -110,24 +133,25 @@ backToTopButton.addEventListener("click", () => {
   });
 });
 
-// Responsive Navbar
-document.addEventListener("DOMContentLoaded", function () {
-  const menuButton = document.getElementById("mobile-menu-button");
-  const closeButton = document.getElementById("close-menu-button");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const menuOverlay = document.getElementById("menu-overlay");
-
-  function openMenu() {
-      mobileMenu.classList.remove("-translate-x-full");
-      menuOverlay.classList.remove("hidden");
-  }
-
-  function closeMenu() {
-      mobileMenu.classList.add("-translate-x-full");
-      menuOverlay.classList.add("hidden");
-  }
-
-  menuButton.addEventListener("click", openMenu);
-  closeButton.addEventListener("click", closeMenu);
-  menuOverlay.addEventListener("click", closeMenu);
-});
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-scrollbar', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  });

@@ -12,9 +12,6 @@
             <a href="<?php echo home_url('/home'); ?>" class="text-slate-300 text-md font-normal hover:text-rose-500 border-b-2 border-transparent transition-all duration-300">
                 Home
             </a>
-            <a href="/about.php" class="text-slate-300 text-md font-normal hover:text-rose-500 border-b-2 border-transparent transition-all duration-300">
-                About
-            </a>
             <!-- Menu dengan Dropdown -->
             <div class="relative group" id="dropdown-container">
                 <button class="flex items-center text-slate-300 text-md font-normal hover:text-rose-500 border-b-2 border-transparent transition-all duration-300" id="dropdown-button">
@@ -49,7 +46,7 @@
             <a href="/news.php" class="text-slate-300 text-md font-normal hover:text-rose-500 border-b-2 border-transparent transition-all duration-300">
                 News
             </a>
-            <a href="/career.php" class="text-slate-300 text-md font-normal hover:text-rose-500 border-b-2 border-transparent transition-all duration-300">
+            <a href="<?php echo home_url('/career'); ?>" class="text-slate-300 text-md font-normal hover:text-rose-500 border-b-2 border-transparent transition-all duration-300">
                 Career
             </a>
             <a href="<?php echo home_url('/contact'); ?>" class="text-slate-300 text-md font-normal hover:text-rose-500 border-b-2 border-transparent transition-all duration-300">
@@ -84,12 +81,12 @@
             </button>
         </div>
         <div class="flex flex-col p-6 space-y-4">
-            <a href="/index.html" class="text-slate-50 text-md font-normal hover:text-pink-700 border-b-2 border-transparent transition-all duration-300">Home</a>
-            <a href="/about.html" class="text-slate-50 text-md font-normal hover:text-pink-700 border-b-2 border-transparent transition-all duration-300">About Us</a>
+            <a href="<?php echo home_url('/home'); ?>" class="text-slate-50 text-md font-normal hover:text-pink-700 border-b-2 border-transparent transition-all duration-300">Home</a>
             <a href="/blog.html" class="text-slate-50 text-md font-normal hover:text-pink-700 border-b-2 border-transparent transition-all duration-300">Service</a>
             <a href="/belajar.html" class="text-slate-50 text-md font-normal hover:text-pink-700 border-b-2 border-transparent transition-all duration-300">Talent</a>
             <a href="/belajar.html" class="text-slate-50 text-md font-normal hover:text-pink-700 border-b-2 border-transparent transition-all duration-300">News</a>
-            <a href="/belajar.html" class="text-slate-50 text-md font-normal hover:text-pink-700 border-b-2 border-transparent transition-all duration-300">Career</a>
+            <a href="<?php echo home_url('/career'); ?>" class="text-slate-50 text-md font-normal hover:text-pink-700 border-b-2 border-transparent transition-all duration-300">Career</a>
+            <a href="<?php echo home_url('/contact'); ?>" class="text-slate-50 text-md font-normal hover:text-pink-700 border-b-2 border-transparent transition-all duration-300">Contact</a>
         </div>
     </div>
 </nav>
